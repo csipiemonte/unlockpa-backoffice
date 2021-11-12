@@ -1,0 +1,56 @@
+.body-page{
+  .main-sidebar {
+    background-color: $white;
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+    -moz-box-shadow:    0px 3px 6px #00000029;
+    box-shadow:         0px 3px 6px #00000029;
+    .brand-link {
+      border-bottom: none;
+    }
+    .nav-item {
+      .nav-link {
+        color: $black;
+        background-color:#007EA81A;
+        &:hover {
+          color: $white;
+          background-color: $header-blue;
+        }
+        &:focus {
+          color: $black;
+          background-color:#007EA81A;
+        }
+      }
+      &.has-treeview {
+        &.menu-open {
+          .nav-link {
+            color: $black;
+            background-color:#007EA81A;
+            &:hover {
+              color: $white;
+              background-color: $header-blue!important;
+            }
+          }
+          .nav-treeview {
+            .nav-item {
+              .nav-link {
+                background-color:$white;
+                &.active {
+                  background-color: $header-blue;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .nav-sidebar .menu-open>.nav-link .right {
+      -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+    }
+  }
+
+  .main-header {
+    background-color: $header-blue!important;
+  }
+}

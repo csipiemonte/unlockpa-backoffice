@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration date="2021/01/20" author="e.World Technology Ltd.">
+  <project id="{1B294467-F675-48C8-9632-26D78A5119EB}" file="D:\Documenti progetti\2020\Progetti\UNLOCKPA\unlockBOT.pmp" name="unlockBOT" product="PHPMaker" version="15.0" datetime="2021/01/20 14:24:42" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0">
+    <table id="utenti" name="utenti" caption="Utenti" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="userlevelpermissions" name="userlevelpermissions" caption="userlevelpermissions" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="userlevels" name="userlevels" caption="Permessi utenti" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="domande" name="domande" caption="Domande" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="comuni" name="comuni" caption="Comuni" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="risposte" name="risposte" caption="Questionario" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="zone" name="zone" caption="Zone" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="categorie" name="categorie" caption="Categorie" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="risposte_zona" name="risposte_zona" caption="Risposte zona" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="bot_instance" name="bot_instance" caption="bot instance" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="knowledge_base" name="knowledge_base" caption="Conoscenza BOT" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="bot" name="bot" caption="bot" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="answer_log" name="answer_log" caption="Conversazioni" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="audittrail" name="audittrail" caption="Audit Trial" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+    <table id="risposte_archivio" name="risposte_archivio" caption="risposte archivio" userlevel="-2,&quot;Anonymous&quot;,0;0,&quot;Default&quot;,0" priv="1" />
+  </project>
+</configuration>

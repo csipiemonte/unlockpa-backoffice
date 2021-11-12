@@ -1,0 +1,83 @@
+Interventi per questa versione
+
+24-11-2020 10.00
+- correzione label "Lookup Tables"
+- inserimendo campo vide nella tabella Comuni
+- ricerca chiusa all'avvio
+- settaggio visibilità "lookup Zona" per utente (list) 
+- attivazione export csv e xls nel Questionario (risposte)
+- campo logo con upload immagine
+- aggiunta del menu Info BOT (tabelle knowledge_base e answer_log)
+- (MANUALE) modifica intestazione mail di registrazione (da modificare dopo il build perchè nel template)
+---------------
+24-11-2020 15.00
+- modifica nome applicazione in "unlockPA" 
+- inserita icona specifica di progetto 
+- grafica : inserita cartella "style" dentro "phpcss"
+- grafica : inserita cartella "new_assets" con "logo_unlock.svg" dentro "phpimages" 
+- grafica : inserita contenuto di "style.css" nel tab "HTML->User Style" del progetto  
+- grafica : inserita contenuto di "script.js" nel progetto "Client Scripts->Other->Login Page->Client Script" 
+- grafica : inserito codice nel progetto "Client Scripts->Global->Pages with header/footer->Client Script" 
+- grafica : inserito codice nel progetto "Client Scripts->Global->Pages with header/footer->Startup Script" 
+---------------
+28-11-2020 
+- modifica della grafica nella sezione di edit : introdotto un delay per la revisione layout (Jquery)
+- correzione visualizzazione completa campo "Domanda" nel questionario (Jquery + div)
+- ridimensionati i campi Domanda e Risposta sia in listing che edit
+- nascosto il menu "Lookup Tables" per utenti non amministratori (codice)
+- rimossa Self Registration
+- attivato Reset Password utente 
+- attivato Trial Audit sulla tabella Questionario (aggiunta tabella specifica)
+- Inserito disclaimer sulla tabella Questionario (codice)
+- Reso non editabile il campo Vide per utente "Default" nella tabella dei comuni (codice)
+- Modificato menu Conoscenza BOT -> Question e Answer
+- Password criptate
+---------------
+30-11-2020 
+- revisione grafica bottoni e altro...
+- inserimento lingua italiana
+---------------
+02-12-2020 
+- aggiunto campo binario "logobin" (Bytea) per immagine del logo del comune in modo che l'upload avvenga su DB
+- aggiunti due campi nella tabella comuni "botattivo" (boolean) "dominio" (stringa)
+- utente comunale: legge entrambe e cambia solo il botattivo
+- Tabella comuni , campi Avviso e No_response trasformati in textarea perchè di grandi dimensioni
+Vedi "Validation (for Add/Copy/Edit/Search)" in help PHPMaker 
+- Validazione : inserita client side + server side (PHP->general Option->Validation)
+- inserimento Regular Expression per campi in input (da configurare per tutti ???)
+---------------
+04-12-2020 
+- inserita sequence sulla tabella dei comuni
+- revisione grafica (style.zip)
+- configurato audit trial su comuni, domande, risposte e utenti 
+---------------
+09-12-2020 
+- inserito campo "categoria" nel questionario (e disabilitato il campo virtuale calcolato nel listing)
+- disabilitato il campo "comune" nelle risposte per l'utente comunale 
+- ridimensionato il campo risposta (in grid-editing)in modo che la pagina si ridimensioni meglio
+---------------
+11-12-2020 
+- Modifica configurazione campi visibili in Add degli utenti 
+---------------
+15-12-2020 
+- Modifica configurazione campo "dominio" in sola lettura per utenti comunali
+---------------
+18-12-2020 
+- Cambiato deploy sotto XAMPP (php7)
+- inserita procedura di controllo input lato server "function Form_CustomValidate(&$customError)"
+- inserita procedura di controllo input lato client "function(fobj) { // DO NOT CHANGE THIS LINE!"
+ 
+---------------
+19-01-2021  
+su tabella risposte_zona
+- aggiunta modifica griglia
+- in modifica il campo è molto piccolo -> modificato in textarea
+- export excel, csv e ricerca
+- codice istat da 5 a 6 caratteri
+- campo vide_url in sola lettura per gli utenti default
+---------------
+20-01-2021  
+- tab. comuni : (Form_CustomValidate) rimozione controlli sui contenuti campi 
+ 
+
+

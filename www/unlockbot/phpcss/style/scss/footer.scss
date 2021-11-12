@@ -1,0 +1,23 @@
+.body-page {
+  .main-footer {
+    border-top: none;
+    background-color: $light-grey;
+  }
+  .ew-footer-text {
+    padding-top: 15px;
+    border-top: 1px solid $border-color;
+  }
+}
+
+.unlockBot .login-page {
+  .main-footer {
+    border-top: none;
+    background-color: $light-grey;
+    text-align: center;
+    .ew-footer-text {
+      padding-top: initial;
+      border-top: none;
+    }
+  }
+ 
+}

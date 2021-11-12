@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  apache:
+    build: .
+    ports:
+      - '9080:80'
+    networks:
+     - unlockpa_net
+
+networks:
+  unlockpa_net:
+    external: true

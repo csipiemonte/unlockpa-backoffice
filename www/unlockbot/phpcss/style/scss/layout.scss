@@ -1,0 +1,245 @@
+.body-page {
+  .wrapper {
+    background-color: $light-grey;
+  }
+  .content-wrapper {
+    min-height: calc(100vh - 67px)!important;
+    background-color: $light-grey;
+    height: auto!important;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .ew-search-option {
+    .ew-search-toggle {
+      background-color: #ffffff;
+      &::after {
+        content: "\f107";
+        width: auto;
+        display: inline-block;
+        padding-left: 5px;
+        font: normal normal normal 14px/1 'FontAwesome';
+      }
+      &.active {
+        background-color: $white;
+        box-shadow: none;
+        &::after {
+          content: "\f106";
+          width: auto;
+          display: inline-block;
+          padding-left: 5px;
+          font: normal normal normal 14px/1 'FontAwesome';
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .btn-default.ew-add {
+    display: flex;
+    align-items: center;
+    color: $white;
+    background-color: #0073b7;
+    border-color: #0073b7;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(17,17,17,0.075);
+    margin-right: 10px!important;
+    border-radius: 5px!important;
+    &::after {
+      content: "Aggiungi";
+      width: auto;
+      display: inline-block;
+      padding-left: 5px;
+      font-family: $font-family-base;
+      font-size: 12px;
+    }
+    &:focus, &:active, &:hover, &:active:focus {
+      color: $white;
+      background-color: #007EA8;
+      border-color: #007EA8;
+    }
+  }
+  .btn-default.ew-edit {
+    display: flex;
+    align-items: center;
+    color: $white;
+    background-color: #0073b7;
+    border-color: #0073b7;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(17,17,17,0.075);
+    margin-right: 10px!important;
+    border-radius: 5px!important;
+    &::after {
+    content: "Modifica";
+    width: auto;
+    display: inline-block;
+    padding-left: 5px;
+    font-family: $font-family-base;
+    font-size: 12px;
+    }
+    &:focus, &:active, &:hover, &:active:focus {
+      color: $white;
+      background-color: #007EA8;
+      border-color: #007EA8;
+    }
+  }
+  .btn-default.ew-copy {
+    display: flex;
+    align-items: center;
+    color: $white;
+    background-color: #0073b7;
+    border-color: #0073b7;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(17,17,17,0.075);
+    margin-right: 10px!important;
+    border-radius: 5px!important;
+    &::after {
+    content: "Copia";
+    width: auto;
+    display: inline-block;
+    padding-left: 5px;
+    font-family: $font-family-base;
+    font-size: 12px;
+    }
+  }
+  .btn-default.ew-delete {
+    display: flex;
+    align-items: center;
+    color: $white;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(17,17,17,0.075);
+    border-radius: 5px!important;
+    &::after {
+    content: "Elimina";
+    width: auto;
+    display: inline-block;
+    padding-left: 5px;
+    font-family: $font-family-base;
+    font-size: 12px;
+    }
+  }
+  
+  .ew-add-edit {
+    display: flex;
+    align-items: center;
+    color: $white;
+    background-color: #0073b7;
+    border-color: #0073b7;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15), 0 1px 1px rgba(17,17,17,0.075);
+    &::after {
+      content: "Aggiungi";
+      width: auto;
+      display: inline-block;
+      padding-left: 5px;
+      font-family: $font-family-base;
+      font-size: 12px;
+    }
+    &:focus, &:active, &:hover, &:active:focus {
+      color: $white;
+      background-color: #007EA8;
+      border-color: #007EA8;
+    }
+    &.ew-grid-edit,&.ew-edit {
+      &::after {
+      content: "Modifica";
+      width: auto;
+      display: inline-block;
+      padding-left: 5px;
+      font-family: $font-family-base;
+      font-size: 12px;
+      }
+    }
+  }
+  /**tabella**/
+  .ew-grid .ew-table>thead>tr>th, .ew-grid .ew-table>thead>tr>td {
+    background-color: #CCCCCC4D;
+    border: none;
+    vertical-align: top;
+    padding: .3rem;
+    color: $black;
+    padding: 15px;
+    .ew-table-header .ew-table-header-btn, .ewjtable-column-header-container {
+      color: $black;
+    }
+  }
+  .ew-grid-lower-panel {
+    background-color: $white;
+    border-radius: 5px;
+    border:none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .ew-grid .ew-table>tbody>tr>td, .ew-grid .ew-table>tfoot>tr>td {
+    background: $white;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 15px;
+  }
+  .ew-grid .ew-table>tbody:last-child>tr:last-child>td, .ew-grid .ew-table>tfoot>tr:last-child>td, .ew-grid .ew-table td.ew-table-last-row {
+    border-bottom: 1px solid #CCCCCC;
+  }
+  .ew-grid .ew-grid-upper-panel {
+    border: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .ew-card {
+    background: $white 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .ew-grid .ew-table .ew-table-select-row>td {
+    color: $black;
+  }
+  .ew-grid .ew-table .ew-table-row:hover td, .ew-grid .ew-table .ew-table-alt-row:hover td {
+    background-color: #F7DA3A33!important;
+  }
+  .ew-grid .ew-table .ew-table-alt-row, .ew-grid .ew-table .ew-table-row {
+    background-color: $white!important;
+  }
+}
+
+
+.login-page {
+  .main-header, .main-sidebar, .content-header {
+    display: none;
+  }
+  .content-wrapper, .main-footer {
+    margin: 0px;
+  }
+  .content-wrapper {
+    min-height: calc(100vh - 52px)!important;
+    background-color: $light-grey;
+  }
+  .login-unlockBOT {
+    margin-top: 15vh;
+    .ew-login-box {
+      @media all and (min-width:500px){
+        width: 448px;
+      }
+      .card {
+        padding: 35px;
+      }
+    }
+  }
+}
+
+.ew-view-table {
+  &.table-striped tbody tr:nth-of-type(odd) {
+    background: $white;
+  }
+  td {
+    padding: 15px!important;
+}
+}
+
+.icon-view::before {
+  content: "\f06e";
+  font: normal normal normal 18px/1 'FontAwesome';
+}
